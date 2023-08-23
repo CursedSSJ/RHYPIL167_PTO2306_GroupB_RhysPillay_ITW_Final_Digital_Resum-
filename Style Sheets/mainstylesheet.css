@@ -1,0 +1,189 @@
+/* Flex Box */
+
+.flex-container-education {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-container-work-experience {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-container-skills {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Grid CSS */
+
+.grid-wrapper {
+  /* apply css grid to any block-level element that has this class */
+  display: grid;
+
+  /* set width of columns and by default the number of columns in the grid*/
+  grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.grid-item {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1;
+  background-color: #001f3f;
+  color: #ffffff;
+}
+
+/* Header styles */
+.heading {
+  width: 100%;
+}
+
+header {
+  background-color: #6c757d;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+#headerlinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#contactLink {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  border: 2px solid;
+  padding: 1rem;
+  width: 40%;
+  display: block;
+  float: left;
+}
+
+#contactLink:hover {
+  background-color: lightblue;
+}
+
+#githubLink {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  border: 2px solid;
+  padding: 1rem;
+  width: 40%;
+  display: block;
+  float: left;
+}
+
+#githubLink:hover {
+  background-color: lightblue;
+}
+
+/* Section styles */
+
+#education {
+  background: burlywood;
+  padding: 40px;
+}
+#work-experience {
+  background: green;
+  padding: 40px;
+}
+
+#skills {
+  background: purple;
+  padding: 40px;
+}
+
+#goals {
+  background: grey;
+  padding: 40px;
+}
+
+#contact {
+  background: red;
+  padding: 40px;
+}
+
+.educationListHeading {
+  list-style-type: none;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+/* Form styles */
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #000000;
+  padding: 2rem;
+  background: #ffffff;
+}
+
+#contactlabel {
+  color: #000000;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.formfield {
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 2rem;
+}
+
+button {
+  background-color: #001f3f;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #6c757d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* @media only screen and (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+} */
+
+/* image container css */
+
+.image-container {
+  max-width: 35%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #ccc;
+}
