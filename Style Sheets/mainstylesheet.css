@@ -15,21 +15,43 @@
   flex-direction: row;
 }
 
-/* Grid CSS */
-
-.grid-wrapper {
-  /* apply css grid to any block-level element that has this class */
-  display: grid;
-
-  /* set width of columns and by default the number of columns in the grid*/
-  grid-template-columns: 33.33% 33.33% 33.33%;
+.flex-container-goals {
+  display: flex;
+  flex-direction: row;
 }
 
-.grid-item {
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-  padding: 1rem;
+.flex-container-contact {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Grid CSS */
+
+.flex-container-goals {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.list-wrapper {
+  background: #6c757d;
+  list-style: none;
+  padding: 2rem;
+}
+
+.goalHeading {
+  color: #ffffff;
+  background: #001f3f;
+  padding: 2rem;
+  border: 2px solid;
+}
+
+.list-item {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #6c757d;
+  color: #ffffff;
+  font-weight: 500;
 }
 
 /* Body styles */
@@ -38,6 +60,11 @@ body {
   line-height: 1;
   background-color: #001f3f;
   color: #ffffff;
+}
+
+h2 {
+  background: #6c757d;
+  padding: 2rem;
 }
 
 /* Header styles */
@@ -56,6 +83,9 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  text-align: center;
+  background: #6c757d;
+  padding: 1rem;
 }
 
 #contactLink {
@@ -90,28 +120,19 @@ header {
 
 /* Section styles */
 
-#education {
-  background: burlywood;
-  padding: 40px;
-}
-#work-experience {
-  background: green;
-  padding: 40px;
+.responsibilities {
+  line-height: 1.5rem;
 }
 
-#skills {
-  background: purple;
-  padding: 40px;
-}
-
-#goals {
-  background: grey;
-  padding: 40px;
-}
-
+#education,
+#work-experience,
+#skills,
+#goals,
 #contact {
-  background: red;
+  background: #001f3f;
   padding: 40px;
+  border: 2px solid #6c757d;
+  margin: 1rem;
 }
 
 .educationListHeading {
@@ -136,7 +157,7 @@ section {
   background: #ffffff;
 }
 
-#contactlabel {
+.contactlabels {
   color: #000000;
   text-align: center;
   font-size: 1.5rem;
@@ -146,8 +167,17 @@ section {
 
 .formfield {
   margin-bottom: 1rem;
-  width: 100%;
   height: 2rem;
+}
+
+#emaillink {
+  color: #000000;
+  padding: 0.2rem;
+  font-weight: 700;
+}
+
+#emaillink:hover {
+  color: lightblue;
 }
 
 button {
@@ -158,6 +188,14 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background-color: lightblue;
+}
+
+#formbottom {
+  text-align: center;
+}
+
 footer {
   background-color: #6c757d;
   color: white;
@@ -165,15 +203,19 @@ footer {
   padding: 1rem;
 }
 
-/* @media only screen and (max-width: 768px) {
-  header {
-    padding: 1rem;
-  }
+.footerlink {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  border: 2px solid;
+  padding: 1rem;
+  /* width: 40%; */
+  display: inline-flex;
+}
 
-  main {
-    padding: 1rem;
-  }
-} */
+.footerlink:hover {
+  background-color: lightblue;
+}
 
 /* image container css */
 
@@ -186,4 +228,88 @@ footer {
   height: auto;
   display: block;
   border: 1px solid #ccc;
+}
+
+@media only screen and (max-width: 800px) {
+  .flex-container-skills,
+  .flex-container-education,
+  .flex-container-work-experience,
+  .flex-container-skills,
+  .flex-container-goals,
+  .flex-container-contact {
+    justify-content: center;
+  }
+
+  #education,
+  #work-experience,
+  #skills,
+  #goals,
+  #contact {
+    padding: 10px;
+    font-size: 0.7rem;
+    margin: 0;
+  }
+  .educationListHeading,
+  .contactlabels {
+    font-size: 1rem;
+  }
+
+  ul {
+    padding: 0px 25px 0px 25px;
+  }
+
+  header {
+    padding: 0.5rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+  }
+
+  #contactForm {
+    width: auto !important;
+  }
+
+  #contactLink,
+  #githubLink {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .image-container {
+    max-width: 100%;
+    display: none;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .formfield {
+    height: 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  button {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+  }
 }
