@@ -1,14 +1,73 @@
-/* Home Page CSS Start */
-
 /* header css */
+
+#mainheader {
+  text-align: center;
+  background-image: url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#workexperienceheader {
+  text-align: center;
+  background-image: url(https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#educationheader {
+  text-align: center;
+  background-image: url(https://plus.unsplash.com/premium_photo-1681843661864-3f46bfb1a4fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#skillsheader {
+  text-align: center;
+  background-image: url(https://images.unsplash.com/photo-1508317469940-e3de49ba902e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#goalsheader {
+  text-align: center;
+  background-image: url(https://images.unsplash.com/photo-1544819667-9bfc1de23d4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#contactheader {
+  text-align: center;
+  background-image: url(https://images.unsplash.com/photo-1587560699334-cc4ff634909a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 .profile-image img {
   border-radius: 50%;
-  height: 180px;
-  width: 180px;
+  height: 286px;
+  width: 290px;
   padding: 0;
   margin: 0;
   border: 15px solid transparent;
+}
+
+#mainsecName {
+  background: #6c757d;
+  padding: 2rem;
+  text-align: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#subtext {
+  font-size: 1rem;
 }
 
 /* NavBar CSS */
@@ -29,30 +88,16 @@
 }
 
 /* main section css */
-
 #introductionStatement {
-  font-size: 18px;
-  line-height: 1.6;
-  margin: 20px 0;
-  padding: 0 20px;
-  color: #444;
-  text-align: justify;
-  border-left: 4px solid #3498db;
+  border: 2px solid #6c757d;
+  background-color: #ffffff;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
-
-#introductionStatement::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -20px;
-  width: 12px;
-  height: 100%;
-  background-color: #f2f2f2;
-  z-index: -1;
-}
-
-/* Home Page CSS End */
 
 /* Flex Box */
 
@@ -329,6 +374,8 @@ footer {
   display: block;
   border: 1px solid #ccc;
 }
+
+/* media queries */
 
 @media only screen and (max-width: 800px) {
   .flex-container-skills,
