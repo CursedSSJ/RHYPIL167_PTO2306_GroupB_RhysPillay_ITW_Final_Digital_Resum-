@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <header>
+    <header id="header">
       <h1>Rhys Cian Pillay</h1>
       <h2>Junior Software Engineer</h2>
       <p>Enthusiastic about coding and software development.</p>
@@ -19,6 +19,11 @@
       <a id="githubLink" href="https://github.com/CursedSSJ">GitHub</a>
       </div>
     </nav>
+    <a id="back-to-top" href="#header">
+        <button >
+            &uarr;
+        </button>
+    </a>
     <main>
       <section id="education">
         <h2>Education</h2>
@@ -104,7 +109,7 @@
         <h2>Goals</h2>
           <div>
             <ul class="list-wrapper">
-              <label><strong><p class="goalHeading">Short-Term Goals (3 to 6 months)</p></strong></label>
+              <label><p class="goalHeading"><strong>Short-Term Goals (3 to 6 months)</strong></p></label>
               <li class="list-item">
                 Learn Frameworks: In the next few months, my goal is to become
                 proficient in a specific front-end or back-end framework. I plan to
@@ -124,7 +129,7 @@
                 architectural decisions, and contribute to the overall growth of the
                 team.              
               </li>
-              <label><strong><p class="goalHeading">Medium-Term Goals (1 to 2 years)</p></strong></label>
+              <label><p class="goalHeading"><strong>Medium-Term Goals (1 to 2 years)</strong></p></label>
               <li class="list-item">
                 Build Full Project: Over the next year, my goal is to lead the
                 development of a full-stack project from start to finish. This
@@ -143,7 +148,7 @@
                 solve more complex coding challenges and contribute to open-source
                 projects that require these skills.              
               </li>
-              <label><strong><p class="goalHeading">Long-Term Goals (3 to 5+ years)</p></strong></label>
+              <label><p class="goalHeading"><strong>Long-Term Goals (3 to 5+ years)</strong></p></label>
               <li class="list-item">
                 Contribute to Open Source: Over the long term, I aim to become a
                 recognized contributor to open-source projects. I want to
@@ -181,7 +186,7 @@
           </select>
           <input class="formfield" type="email" name="email" required />
           <textarea class="formfield" name="message"></textarea>
-          <button class="formfield" type="submit">Submit</button>
+          <button class="formfield" id="submit" type="submit">Submit</button>
           <div id="formbottom">
             <h1 class="contactlabels">Please find my email address below:</h1>
             <p style="color:black"><i class="fa fa-envelope" style="padding-right: 0.5rem"></i><a href="mailto:Rhys.pillay@gmail.com" id="emaillink">Rhys.pillay@gmail.com</a></p>
