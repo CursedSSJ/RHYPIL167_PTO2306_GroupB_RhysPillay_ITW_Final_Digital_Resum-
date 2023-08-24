@@ -1,3 +1,59 @@
+/* Home Page CSS Start */
+
+/* header css */
+
+.profile-image img {
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  padding: 0;
+  margin: 0;
+  border: 15px solid transparent;
+}
+
+/* NavBar CSS */
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+/* main section css */
+
+#introductionStatement {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 20px 0;
+  padding: 0 20px;
+  color: #444;
+  text-align: justify;
+  border-left: 4px solid #3498db;
+}
+
+#introductionStatement::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 12px;
+  height: 100%;
+  background-color: #f2f2f2;
+  z-index: -1;
+}
+
+/* Home Page CSS End */
+
 /* Flex Box */
 
 .flex-container-education {
@@ -67,11 +123,12 @@ body {
 h2 {
   background: #6c757d;
   padding: 2rem;
+  text-align: center;
 }
 
 /* ---- Back to top ---- */
 
-#back-to-top > button {
+/* #back-to-top > button {
   background-color: #ffffff;
   border-radius: 50%;
   border: 2px solid #ffffff;
@@ -88,7 +145,7 @@ h2 {
   position: fixed;
   right: 80px;
   bottom: 80px;
-}
+} */
 
 /* Header styles */
 
@@ -171,6 +228,12 @@ section {
 
 /* Form styles */
 
+.fieldLabel {
+  color: #000000;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
 #mailIcon {
   color: #000000;
   padding-right: 0.5rem;
@@ -195,8 +258,11 @@ section {
   font-weight: bold;
 }
 
-.formfield {
+.interests {
   margin-bottom: 1rem;
+}
+
+.formfield {
   height: 2rem;
 }
 
@@ -290,10 +356,6 @@ footer {
 
   ul {
     padding: 0px 25px 0px 25px;
-  }
-
-  header {
-    padding: 0.5rem;
   }
 
   main {

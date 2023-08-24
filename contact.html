@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Digital Resume</title>
+    <link rel="stylesheet" href="Style Sheets/mainstylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <h1>Rhys Cian Pillay</h1>
+      <h2>Junior Software Engineer</h2>
+      <p>Enthusiastic about coding and software development.</p>
+    </header>
+    <nav id="navbar">
+      <a href="index.html">Home</a>
+      <a href="Education.html">Education</a>
+      <a href="work-experience.html">Work Experience</a>
+      <a href="skills.html">Skills</a>
+      <a href="goals.html">Goals</a>
+    </nav>
+    <main>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form
+          id="contactForm"
+          action="https://formsubmit.co/rhys.pillay@gmail.com"
+          method="POST"
+        >
+          <h2 class="contactHeading">Contact Form</h2>
+          <label class="fieldLabel">Purpose of Contact:</label>
+          <select class="formfield" name="contactType" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="reachOut">I would like to reach out to you</option>
+            <option value="reachMe">I would like you to reach out to me</option>
+          </select>
+          <label class="fieldLabel">Email Address:</label>
+          <input class="formfield" type="email" name="email" required />
+          <label class="fieldLabel">Message:</label>
+          <textarea class="formfield" name="message" required></textarea>
+          <label class="fieldLabel">Preferred Contact Method:</label>
+          <div class="contactMethod">
+            <input type="radio" name="contactMethod" value="email" required />
+            <label class="fieldLabel" for="contactMethod">Email</label>
+            <input type="radio" name="contactMethod" value="phone" required />
+            <label class="fieldLabel" for="contactMethod">Phone</label>
+          </div>
+          <label class="fieldLabel">Interests:</label>
+          <div class="interests">
+            <input
+              type="checkbox"
+              name="interestWebDev"
+              value="webDev"
+              required
+            />
+            <label class="fieldLabel" for="interestWebDev"
+              >Web Development</label
+            >
+            <input type="checkbox" name="interestTech" value="tech" required />
+            <label class="fieldLabel" for="interestTech"
+              >Technology Trends</label
+            >
+            <input
+              type="checkbox"
+              name="interestNetworking"
+              value="networking"
+              required
+            />
+            <label class="fieldLabel" for="interestNetworking"
+              >Networking</label
+            >
+          </div>
+          <button class="formfield" id="submit" type="submit">Submit</button>
+          <div id="formbottom">
+            <h3 class="contactlabels">
+              For direct inquiries, please use the email address below:
+            </h3>
+            <p>
+              <i class="fa fa-envelope" id="mailIcon"></i
+              ><a href="mailto:Rhys.pillay@gmail.com" id="emaillink"
+                >Rhys.pillay@gmail.com</a
+              >
+            </p>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer id="footer">
+      <h1>My Links</h1>
+      <a
+        class="footerlink"
+        href="https://www.linkedin.com/in/rhys-pillay-34408821b/"
+        ><i class="fa fa-linkedin-square" class="iconfooterlink"></i
+      ></a>
+      <a class="footerlink" href="https://github.com/CursedSSJ"
+        ><i class="fa fa-github" class="iconfooterlink"></i
+      ></a>
+      <p>&copy; 2023 Rhys Cian Pillay. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
