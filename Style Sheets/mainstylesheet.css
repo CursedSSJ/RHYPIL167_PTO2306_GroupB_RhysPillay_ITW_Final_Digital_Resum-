@@ -170,6 +170,12 @@ section {
 }
 
 /* Form styles */
+
+#mailIcon {
+  color: #000000;
+  padding-right: 0.5rem;
+}
+
 #contactForm {
   display: flex;
   flex-direction: column;
@@ -239,6 +245,10 @@ footer {
 
 .footerlink:hover {
   background-color: lightblue;
+}
+
+.iconfooterlink {
+  font-size: 2rem;
 }
 
 /* image container css */
