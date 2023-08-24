@@ -79,6 +79,8 @@
 #navbar {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   background-color: #333;
   padding: 10px 0;
@@ -89,6 +91,10 @@
   color: white;
   text-decoration: none;
   margin: 0 15px;
+}
+
+#navbar a:hover {
+  color: lightblue;
 }
 
 /* main section css */
@@ -105,38 +111,16 @@
 
 /* Flex Box */
 
-.flex-container-education {
-  display: flex;
-  flex-direction: row;
-}
-
-.flex-container-work-experience {
-  display: flex;
-  flex-direction: row;
-}
-
-.flex-container-skills {
-  display: flex;
-  flex-direction: row;
-}
-
-.flex-container-goals {
-  display: flex;
-  flex-direction: row;
-}
-
+.flex-container-skills,
+.flex-container-education,
+.flex-container-work-experience,
+.flex-container-skills,
 .flex-container-contact {
   display: flex;
   flex-direction: row;
 }
 
 /* Grid CSS */
-
-.flex-container-goals {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
 
 .list-wrapper {
   background: #6c757d;
@@ -231,8 +215,17 @@ header {
 
 /* Section styles */
 
-.responsibilities {
+.responsibilities,
+.skills {
   line-height: 1.5rem;
+}
+
+.job,
+.skills {
+  padding: 20px;
+  border: 2px solid;
+  background: #6c757d;
+  margin: 1rem;
 }
 
 #education,
@@ -272,7 +265,6 @@ section {
 #contactForm {
   display: flex;
   flex-direction: column;
-  width: 80%;
   margin-left: auto;
   margin-right: auto;
   border: 2px solid #000000;
@@ -351,6 +343,7 @@ footer {
 
 .image-container {
   max-width: 35%;
+  margin: auto;
 }
 
 .image-container img {
@@ -364,14 +357,71 @@ footer {
 
 /* mobile responsiveness */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+  #contactheader,
+  #mainheader,
+  #educationheader,
+  #workexperienceheader,
+  #skillsheader,
+  #goalsheader {
+    margin-top: 7.5rem;
+  }
+
+  .profile-image img {
+    width: 50%;
+    height: auto;
+  }
+
+  #mainsecName {
+    font-size: 1rem;
+    padding: 1rem;
+    width: auto;
+  }
+
+  #navbar {
+    display: grid;
+  }
+
+  #navbar a {
+    width: 30%;
+    margin: auto;
+  }
+
+  .list-wrapper {
+    font-size: 0.6rem;
+    font-size: 0.6rem;
+    grid-template-columns: none;
+    grid-template-rows: none;
+  }
+
+  .goalHeading {
+    text-align: center;
+  }
+
+  .list-item {
+    text-align: left;
+  }
+
   .flex-container-skills,
   .flex-container-education,
   .flex-container-work-experience,
   .flex-container-skills,
-  .flex-container-goals,
   .flex-container-contact {
     justify-content: center;
+    flex-direction: column;
+  }
+
+  .image-container {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .image-container img {
+    width: 50%;
+    height: auto;
+    display: block;
+    border: 1px solid #ccc;
+    margin: auto;
   }
 
   #education,
@@ -380,7 +430,7 @@ footer {
   #goals,
   #contact {
     padding: 10px;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     margin: 0;
   }
   .educationListHeading,
@@ -390,57 +440,6 @@ footer {
 
   ul {
     padding: 0px 25px 0px 25px;
-  }
-
-  main {
-    padding: 1rem;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  h2 {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-
-  h3 {
-    font-size: 1rem;
-  }
-
-  h4 {
-    font-size: 0.9rem;
-  }
-
-  #contactForm {
-    width: auto !important;
-  }
-
-  #contactLink,
-  #githubLink {
-    width: 100%;
-    margin: 5px 0;
-  }
-
-  .image-container {
-    max-width: 100%;
-    display: none;
-  }
-
-  .image-container img {
-    width: 100%;
-    height: auto;
-  }
-
-  .formfield {
-    height: 1.5rem;
-    font-size: 0.8rem;
-  }
-
-  #submit {
-    padding: 0.3rem 0.6rem;
-    font-size: 0.8rem;
   }
 }
 
@@ -448,14 +447,13 @@ footer {
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .list-wrapper {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
 
   .flex-container-skills,
   .flex-container-education,
   .flex-container-work-experience,
   .flex-container-skills,
-  .flex-container-goals,
   .flex-container-contact {
     justify-content: center;
   }
@@ -497,36 +495,6 @@ footer {
 
   h4 {
     font-size: 0.9rem;
-  }
-
-  #contactForm {
-    width: auto !important;
-  }
-
-  #contactLink,
-  #githubLink {
-    width: 100%;
-    margin: 5px 0;
-  }
-
-  .image-container {
-    max-width: 100%;
-    display: none;
-  }
-
-  .image-container img {
-    width: 100%;
-    height: auto;
-  }
-
-  .formfield {
-    height: 1.5rem;
-    font-size: 0.8rem;
-  }
-
-  #submit {
-    padding: 0.3rem 0.6rem;
-    font-size: 0.8rem;
   }
 }
 
@@ -537,7 +505,6 @@ footer {
   .flex-container-education,
   .flex-container-work-experience,
   .flex-container-skills,
-  .flex-container-goals,
   .flex-container-contact {
     justify-content: center;
   }
@@ -579,35 +546,5 @@ footer {
 
   h4 {
     font-size: 0.9rem;
-  }
-
-  #contactForm {
-    width: auto !important;
-  }
-
-  #contactLink,
-  #githubLink {
-    width: 100%;
-    margin: 5px 0;
-  }
-
-  .image-container {
-    max-width: 100%;
-    display: none;
-  }
-
-  .image-container img {
-    width: 100%;
-    height: auto;
-  }
-
-  .formfield {
-    height: 1.5rem;
-    font-size: 0.8rem;
-  }
-
-  #submit {
-    padding: 0.3rem 0.6rem;
-    font-size: 0.8rem;
   }
 }
